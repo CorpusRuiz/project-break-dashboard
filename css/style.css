@@ -44,20 +44,47 @@ table {
 body {
     background-color: bisque;
 }
-.generalPasswordCard {
+.indexFatherCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.fatherCard {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
-.passwordCard {
+.generalCard {
     display: flex;
     flex-direction: column;
+    width: 400px;
     margin: 5px;
     padding: 15px;
     gap: 10px;
     border-radius: 10px;
     background-color: rgba(255,255,255,0.6);
+}
+.clockCard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.clockIndexCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+.hourContainer {
+    font-size: 40px;
+}
+.dateContainer {
+    font-size: 20px;
 }
 
 footer {

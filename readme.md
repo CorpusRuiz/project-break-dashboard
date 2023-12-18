@@ -31,7 +31,7 @@ Vamos a ver que hay que hacer en cada uno de los proyectos:
 Crea un página que tendrá lo siguiente:
 
 Un reloj digital con la fecha y hora actual del lugar en el que te encuentres. Tendrá las siguientes características: 
-- Por un lado tendremos un reloj digital con horas, minutos y segundos que se tendrá que actualizar automaticamente cada segundo que pase.
+- Por un lado tendrermos un eloj digital con horas, minutos y segundos que se tendrá que actualizar automcatiamente cada segundo que pase.
 - Tendrás que formatear las hora. Si las horas, minutos y segundos son menores de 10 habrá que añadir un 0 delante para que quede como 01, 02, ...
 - La fecha tendrá formato DD/MM/AAAA 
 - Aparecerán unas frases dependiendo un intervalo de horas. Doy una de ejemplo aunque puedes cambiarlas a tu gusto:

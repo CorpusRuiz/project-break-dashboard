@@ -7,12 +7,50 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>HOME</h1>
+    <h1>HOME PAGE</h1>
+    <div class="clockIndexCard">
+        <div class="hourContainer" id="hourContainer"></div>
+        <div class="dateContainer" id="dateContainer"></div>
+    </div>
+    <div class="indexFatherCard">
+        <div class="indexCard">
+            <div class="fatherCard">
+                <h2>Añade tu enlace de interés</h2>
+                <div class="generalCard">
+                    <input type="text" id="urlName" placeholder="Nombre de tu enlace">
+                    <input type="text" id="url" placeholder="Pega aqui tu URL">
+                    <button id="UrlButton" class="UrlButton">Añadir enlace</button>
+                    <div class="savedUrlCard" id="savedUrlCard">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indexCard">
+            <div class="fatherCard">
+                <h2>Weather</h2>
+                <div class="generalCard">
+                    <p>aqui va el tiempo</p>
+                </div>
+            </div>
+            <div class="fatherCard">
+                <h2>Crea tu contraseña segura </h2>
+                <div class="generalCard">
+                    <h3>Numero de caracteres de la contraseña</h3>
+                    <div>
+                        <input type="number" id="passwordLength" placeholder="min:12 max:50">
+                        <button id="buttonPassword" class="buttonPassword">Generar Contraseña</button>
+                    </div>
+                    <div id="newPassword" class="newPassword">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
-        <a href="./clock.html">Clock</a>
-        <a href="./password.html">Password Generator</a>
+        <a href="./password.html">Contraseñas</a>
         <a href="./links.html">Links</a>
-        <a href="./weather.html">Weather</a>
+        <a href="./weather.html">Tiempo</a>
+        <a href="./clock.html">Reloj</a>
     </footer>
     <script src="./js/scriptHome.js"></script>
 </body>
