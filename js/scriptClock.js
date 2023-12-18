@@ -9,9 +9,6 @@ const cs5 = 'Buenas tardes, el último empujón';
 const cs6 = 'Esto ya son horas extras, ... piensa en parar pronto';
 const cs7 = 'Buenas noches, es hora de pensar en parar y descansar';
 
-
-
-
 clock = () => {
     const reloj = new Date();
     const hours = reloj.getHours();
@@ -46,8 +43,6 @@ clock = () => {
     sentenceContainer.innerHTML = `
     <p>${clockSentence}</p>
     `
-    
-
 }
 
 clock()

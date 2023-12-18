@@ -51,7 +51,6 @@ body {
     flex-wrap: wrap;
     gap: 100px;
 }
-
 .fatherCard {
     display: flex;
     flex-direction: column;
@@ -86,6 +85,36 @@ body {
 .dateContainer {
     font-size: 20px;
 }
+.weatherText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.weatherPlace {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.weather {
+    display: flex;
+    gap: 20px;
+}
+.weatherImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.longWeather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
 
 footer {
     display: flex;

@@ -6,7 +6,7 @@ const minusculas = "abcdefghijklmnopqrstuvwxyz";
 const numeros = "0123456789";
 const simbolos = "!@#$%^&*()-_=+";
 
-print = (passLength, password) => {
+const printPassword = (passLength, password) => {
     if (passLength < 12) {
         newPassword.innerHTML = `Error: genera contraseñas con minimo 12 caracteres`
     }
@@ -21,7 +21,7 @@ print = (passLength, password) => {
     }
 }
 
-createPassword = (lenght) => {
+const createPassword = (lenght) => {
     let password = "";
     for (let i = 0; i < lenght; i++) {
         let random = Math.floor(Math.random() * mayusculas.length);
@@ -32,6 +32,6 @@ createPassword = (lenght) => {
 
 buttonPassword.addEventListener('click', () => {
     let newPasswordLength = passwordLength.value
-    print(newPasswordLength, createPassword(newPasswordLength))
+    printPassword(newPasswordLength, createPassword(newPasswordLength))
 })
 

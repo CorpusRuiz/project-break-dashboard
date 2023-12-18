@@ -4,7 +4,7 @@ const UrlButton = document.getElementById('UrlButton');
 const savedUrlCard = document.getElementById('savedUrlCard');
 
 
-print = () => {
+const printLinks = () => {
 
     savedUrlCard.innerHTML += `
     <div class="urlCard">
