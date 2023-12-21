@@ -5,6 +5,7 @@ const mayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const minusculas = "abcdefghijklmnopqrstuvwxyz";
 const numeros = "0123456789";
 const simbolos = "!@#$%^&*()-_=+";
+const all = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+';
 
 const printPassword = (passLength, password) => {
     if (passLength < 12) {
@@ -21,11 +22,18 @@ const printPassword = (passLength, password) => {
     }
 }
 
+
 const createPassword = (lenght) => {
-    let password = "";
-    for (let i = 0; i < lenght; i++) {
-        let random = Math.floor(Math.random() * mayusculas.length);
-        password += mayusculas.charAt(random)
+    let randomA = Math.floor(Math.random() * mayusculas.length);
+    let randoma = Math.floor(Math.random() * minusculas.length);
+    let randomN = Math.floor(Math.random() * numeros.length);
+    let randomS = Math.floor(Math.random() * simbolos.length);
+
+    let password = mayusculas.charAt(randomA)+minusculas.charAt(randoma)+numeros.charAt(randomN)+simbolos.charAt(randomS);
+
+    for (let i = 0; i < (lenght -4); i++) {
+        let randomAll = Math.floor(Math.random() * all.length);
+        password += all.charAt(randomAll)
     }
     return password
 }
