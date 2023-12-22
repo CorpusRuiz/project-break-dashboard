@@ -42,7 +42,7 @@ table {
 }
 /*-----*/
 body {
-    background-color: bisque;
+    background-size: 100%;
 }
 .indexFatherCard {
     display: flex;
@@ -116,6 +116,15 @@ body {
 .deletebutton {
     background-color: white;
     border-radius: 50%;
+}
+.white {
+    color: black;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 footer {
     display: flex;

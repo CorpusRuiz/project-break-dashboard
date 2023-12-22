@@ -26,7 +26,7 @@ const  newLink = () => {
         let objectUrl = { title: name, url: link };
         saveLink(objectUrl);
     } else {
-        alert('Por favor, complete ambos campos.');
+        alert('Rellena ambos campos.');
     }
 }
 

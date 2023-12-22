@@ -11,10 +11,10 @@ clock = () => {
     let timestring = reloj.toLocaleTimeString();
 
     hourContainer.innerHTML = `
-    <p>${timestring}</p>
+    <p class="white">${timestring}</p>
     `
     dateContainer.innerHTML = `
-    <p>${day}/${month}/${year}</p>
+    <p class="white">${day}/${month}/${year}</p>
     `
 }
 
@@ -53,7 +53,7 @@ const  newLink = () => {
         let objectUrl = { title: name, url: link };
         saveLink(objectUrl);
     } else {
-        alert('Por favor, complete ambos campos.');
+        alert('Rellena ambos campos.');
     }
 }
 
@@ -210,3 +210,12 @@ buttonPassword.addEventListener('click', () => {
     printPassword(newPasswordLength, createPassword(newPasswordLength))
 })
 
+/* img background */
+
+const randomImg = () => {
+    document.body.style.backgroundImage = `url('./assets/img/img${Math.floor(Math.random() * 6) + 1}.jpg')`
+}
+randomImg()
+setInterval(() => {
+    randomImg()
+}, 5000);
