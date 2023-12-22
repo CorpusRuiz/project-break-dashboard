@@ -51,4 +51,4 @@ const randomImg = () => {
 randomImg()
 setInterval(() => {
     randomImg()
-}, 5000);
+}, 15000);
