@@ -46,8 +46,8 @@ const printLinks = () => {
     links.forEach(link => {
         savedUrlCard.innerHTML += `
         <div class="linkcard">
-        <a href="${link.url}" target="_blank">${link.title}</a>
         <button class="deletebutton" onclick="deleteLink('${link.title}')">x</button>
+        <a href="${link.url}" target="_blank">${link.title}</a>
         </div>
         `;
     });
@@ -60,3 +60,13 @@ UrlButton.addEventListener('click', () => {
 })
 
 printLinks()
+
+/*-backgroundimage-*/
+
+const randomImg = () => {
+    document.body.style.backgroundImage = `url('./assets/img/img${Math.floor(Math.random() * 6) + 1}.jpg')`
+}
+randomImg()
+setInterval(() => {
+    randomImg()
+}, 5000);

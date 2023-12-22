@@ -75,3 +75,13 @@ const getWeather = async () => {
 }
 
 getWeather()
+
+/*-backgroundimage-*/
+
+const randomImg = () => {
+    document.body.style.backgroundImage = `url('./assets/img/img${Math.floor(Math.random() * 6) + 1}.jpg')`
+}
+randomImg()
+setInterval(() => {
+    randomImg()
+}, 5000);

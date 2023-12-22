@@ -73,8 +73,8 @@ const printLinks = () => {
     links.forEach(link => {
         savedUrlCard.innerHTML += `
         <div class="linkcard">
-        <a href="${link.url}" target="_blank">${link.title}</a>
         <button class="deletebutton" onclick="deleteLink('${link.title}')">x</button>
+        <a href="${link.url}" target="_blank">${link.title}</a>
         </div>
         `;
     });

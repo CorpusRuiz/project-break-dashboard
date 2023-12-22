@@ -43,3 +43,12 @@ buttonPassword.addEventListener('click', () => {
     printPassword(newPasswordLength, createPassword(newPasswordLength))
 })
 
+/*-backgroundimage-*/
+
+const randomImg = () => {
+    document.body.style.backgroundImage = `url('./assets/img/img${Math.floor(Math.random() * 6) + 1}.jpg')`
+}
+randomImg()
+setInterval(() => {
+    randomImg()
+}, 5000);
